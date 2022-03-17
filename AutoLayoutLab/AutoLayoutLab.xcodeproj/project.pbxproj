@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		061AC12C27E3C04E00C7F0A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AC12B27E3C04E00C7F0A0 /* AppDelegate.swift */; };
-		061AC12E27E3C04E00C7F0A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AC12D27E3C04E00C7F0A0 /* SceneDelegate.swift */; };
-		061AC13027E3C04E00C7F0A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AC12F27E3C04E00C7F0A0 /* ViewController.swift */; };
-		061AC13327E3C04E00C7F0A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061AC13127E3C04E00C7F0A0 /* Main.storyboard */; };
-		061AC13527E3C04F00C7F0A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061AC13427E3C04F00C7F0A0 /* Assets.xcassets */; };
-		061AC13827E3C04F00C7F0A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061AC13627E3C04F00C7F0A0 /* LaunchScreen.storyboard */; };
-		061AC14027E3F17A00C7F0A0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AC13F27E3F17900C7F0A0 /* Game.swift */; };
+		061AC0D127E364FA00C7F0A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AC0D027E364FA00C7F0A0 /* AppDelegate.swift */; };
+		061AC0D327E364FA00C7F0A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AC0D227E364FA00C7F0A0 /* SceneDelegate.swift */; };
+		061AC0D527E364FA00C7F0A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AC0D427E364FA00C7F0A0 /* ViewController.swift */; };
+		061AC0D827E364FA00C7F0A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061AC0D627E364FA00C7F0A0 /* Main.storyboard */; };
+		061AC0DA27E364FB00C7F0A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061AC0D927E364FB00C7F0A0 /* Assets.xcassets */; };
+		061AC0DD27E364FB00C7F0A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061AC0DB27E364FB00C7F0A0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		061AC12827E3C04E00C7F0A0 /* ApplePie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		061AC12B27E3C04E00C7F0A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		061AC12D27E3C04E00C7F0A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		061AC12F27E3C04E00C7F0A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		061AC13227E3C04E00C7F0A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		061AC13427E3C04F00C7F0A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		061AC13727E3C04F00C7F0A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		061AC13927E3C04F00C7F0A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		061AC13F27E3F17900C7F0A0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		061AC0CD27E364FA00C7F0A0 /* AutoLayoutLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		061AC0D027E364FA00C7F0A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		061AC0D227E364FA00C7F0A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		061AC0D427E364FA00C7F0A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		061AC0D727E364FA00C7F0A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		061AC0D927E364FB00C7F0A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		061AC0DC27E364FB00C7F0A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		061AC0DE27E364FB00C7F0A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		061AC12527E3C04E00C7F0A0 /* Frameworks */ = {
+		061AC0CA27E364FA00C7F0A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		061AC11F27E3C04E00C7F0A0 = {
+		061AC0C427E364F900C7F0A0 = {
 			isa = PBXGroup;
 			children = (
-				061AC12A27E3C04E00C7F0A0 /* ApplePie */,
-				061AC12927E3C04E00C7F0A0 /* Products */,
+				061AC0CF27E364FA00C7F0A0 /* AutoLayoutLab */,
+				061AC0CE27E364FA00C7F0A0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		061AC12927E3C04E00C7F0A0 /* Products */ = {
+		061AC0CE27E364FA00C7F0A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				061AC12827E3C04E00C7F0A0 /* ApplePie.app */,
+				061AC0CD27E364FA00C7F0A0 /* AutoLayoutLab.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		061AC12A27E3C04E00C7F0A0 /* ApplePie */ = {
+		061AC0CF27E364FA00C7F0A0 /* AutoLayoutLab */ = {
 			isa = PBXGroup;
 			children = (
-				061AC12B27E3C04E00C7F0A0 /* AppDelegate.swift */,
-				061AC12D27E3C04E00C7F0A0 /* SceneDelegate.swift */,
-				061AC12F27E3C04E00C7F0A0 /* ViewController.swift */,
-				061AC13F27E3F17900C7F0A0 /* Game.swift */,
-				061AC13127E3C04E00C7F0A0 /* Main.storyboard */,
-				061AC13427E3C04F00C7F0A0 /* Assets.xcassets */,
-				061AC13627E3C04F00C7F0A0 /* LaunchScreen.storyboard */,
-				061AC13927E3C04F00C7F0A0 /* Info.plist */,
+				061AC0D027E364FA00C7F0A0 /* AppDelegate.swift */,
+				061AC0D227E364FA00C7F0A0 /* SceneDelegate.swift */,
+				061AC0D427E364FA00C7F0A0 /* ViewController.swift */,
+				061AC0D627E364FA00C7F0A0 /* Main.storyboard */,
+				061AC0D927E364FB00C7F0A0 /* Assets.xcassets */,
+				061AC0DB27E364FB00C7F0A0 /* LaunchScreen.storyboard */,
+				061AC0DE27E364FB00C7F0A0 /* Info.plist */,
 			);
-			path = ApplePie;
+			path = AutoLayoutLab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		061AC12727E3C04E00C7F0A0 /* ApplePie */ = {
+		061AC0CC27E364FA00C7F0A0 /* AutoLayoutLab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 061AC13C27E3C04F00C7F0A0 /* Build configuration list for PBXNativeTarget "ApplePie" */;
+			buildConfigurationList = 061AC0E127E364FB00C7F0A0 /* Build configuration list for PBXNativeTarget "AutoLayoutLab" */;
 			buildPhases = (
-				061AC12427E3C04E00C7F0A0 /* Sources */,
-				061AC12527E3C04E00C7F0A0 /* Frameworks */,
-				061AC12627E3C04E00C7F0A0 /* Resources */,
+				061AC0C927E364FA00C7F0A0 /* Sources */,
+				061AC0CA27E364FA00C7F0A0 /* Frameworks */,
+				061AC0CB27E364FA00C7F0A0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ApplePie;
-			productName = ApplePie;
-			productReference = 061AC12827E3C04E00C7F0A0 /* ApplePie.app */;
+			name = AutoLayoutLab;
+			productName = AutoLayoutLab;
+			productReference = 061AC0CD27E364FA00C7F0A0 /* AutoLayoutLab.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		061AC12027E3C04E00C7F0A0 /* Project object */ = {
+		061AC0C527E364F900C7F0A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					061AC12727E3C04E00C7F0A0 = {
+					061AC0CC27E364FA00C7F0A0 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 061AC12327E3C04E00C7F0A0 /* Build configuration list for PBXProject "ApplePie" */;
+			buildConfigurationList = 061AC0C827E364F900C7F0A0 /* Build configuration list for PBXProject "AutoLayoutLab" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 061AC11F27E3C04E00C7F0A0;
-			productRefGroup = 061AC12927E3C04E00C7F0A0 /* Products */;
+			mainGroup = 061AC0C427E364F900C7F0A0;
+			productRefGroup = 061AC0CE27E364FA00C7F0A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				061AC12727E3C04E00C7F0A0 /* ApplePie */,
+				061AC0CC27E364FA00C7F0A0 /* AutoLayoutLab */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		061AC12627E3C04E00C7F0A0 /* Resources */ = {
+		061AC0CB27E364FA00C7F0A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				061AC13827E3C04F00C7F0A0 /* LaunchScreen.storyboard in Resources */,
-				061AC13527E3C04F00C7F0A0 /* Assets.xcassets in Resources */,
-				061AC13327E3C04E00C7F0A0 /* Main.storyboard in Resources */,
+				061AC0DD27E364FB00C7F0A0 /* LaunchScreen.storyboard in Resources */,
+				061AC0DA27E364FB00C7F0A0 /* Assets.xcassets in Resources */,
+				061AC0D827E364FA00C7F0A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		061AC12427E3C04E00C7F0A0 /* Sources */ = {
+		061AC0C927E364FA00C7F0A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				061AC13027E3C04E00C7F0A0 /* ViewController.swift in Sources */,
-				061AC12C27E3C04E00C7F0A0 /* AppDelegate.swift in Sources */,
-				061AC12E27E3C04E00C7F0A0 /* SceneDelegate.swift in Sources */,
-				061AC14027E3F17A00C7F0A0 /* Game.swift in Sources */,
+				061AC0D527E364FA00C7F0A0 /* ViewController.swift in Sources */,
+				061AC0D127E364FA00C7F0A0 /* AppDelegate.swift in Sources */,
+				061AC0D327E364FA00C7F0A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		061AC13127E3C04E00C7F0A0 /* Main.storyboard */ = {
+		061AC0D627E364FA00C7F0A0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				061AC13227E3C04E00C7F0A0 /* Base */,
+				061AC0D727E364FA00C7F0A0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		061AC13627E3C04F00C7F0A0 /* LaunchScreen.storyboard */ = {
+		061AC0DB27E364FB00C7F0A0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				061AC13727E3C04F00C7F0A0 /* Base */,
+				061AC0DC27E364FB00C7F0A0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		061AC13A27E3C04F00C7F0A0 /* Debug */ = {
+		061AC0DF27E364FB00C7F0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		061AC13B27E3C04F00C7F0A0 /* Release */ = {
+		061AC0E027E364FB00C7F0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +282,7 @@
 			};
 			name = Release;
 		};
-		061AC13D27E3C04F00C7F0A0 /* Debug */ = {
+		061AC0E227E364FB00C7F0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -295,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YWV9MA76N6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ApplePie/Info.plist;
+				INFOPLIST_FILE = AutoLayoutLab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,15 +302,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nastyabekesheva.ApplePie;
+				PRODUCT_BUNDLE_IDENTIFIER = nastyabekesheva.AutoLayoutLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		061AC13E27E3C04F00C7F0A0 /* Release */ = {
+		061AC0E327E364FB00C7F0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -323,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YWV9MA76N6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ApplePie/Info.plist;
+				INFOPLIST_FILE = AutoLayoutLab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,36 +330,36 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nastyabekesheva.ApplePie;
+				PRODUCT_BUNDLE_IDENTIFIER = nastyabekesheva.AutoLayoutLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		061AC12327E3C04E00C7F0A0 /* Build configuration list for PBXProject "ApplePie" */ = {
+		061AC0C827E364F900C7F0A0 /* Build configuration list for PBXProject "AutoLayoutLab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				061AC13A27E3C04F00C7F0A0 /* Debug */,
-				061AC13B27E3C04F00C7F0A0 /* Release */,
+				061AC0DF27E364FB00C7F0A0 /* Debug */,
+				061AC0E027E364FB00C7F0A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		061AC13C27E3C04F00C7F0A0 /* Build configuration list for PBXNativeTarget "ApplePie" */ = {
+		061AC0E127E364FB00C7F0A0 /* Build configuration list for PBXNativeTarget "AutoLayoutLab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				061AC13D27E3C04F00C7F0A0 /* Debug */,
-				061AC13E27E3C04F00C7F0A0 /* Release */,
+				061AC0E227E364FB00C7F0A0 /* Debug */,
+				061AC0E327E364FB00C7F0A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 061AC12027E3C04E00C7F0A0 /* Project object */;
+	rootObject = 061AC0C527E364F900C7F0A0 /* Project object */;
 }
