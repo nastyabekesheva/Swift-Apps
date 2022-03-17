@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BRB-i2-fxK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhz-Id-mUU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBj-Mh-SD1">
+                                                <rect key="frame" x="387" y="187" width="19" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kn-7Y-Cie">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="37"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="=">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEK-Qs-9U0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="IBj-Mh-SD1" secondAttribute="trailing" constant="8" id="1Sh-ru-09u"/>
+                                            <constraint firstItem="5kn-7Y-Cie" firstAttribute="top" secondItem="bhz-Id-mUU" secondAttribute="top" id="4zo-ay-CHg"/>
+                                            <constraint firstItem="5kn-7Y-Cie" firstAttribute="leading" secondItem="bhz-Id-mUU" secondAttribute="leading" id="Iuf-vr-dP0"/>
+                                            <constraint firstAttribute="bottom" secondItem="IBj-Mh-SD1" secondAttribute="bottom" constant="8" id="Qvi-ad-lWk"/>
+                                            <constraint firstItem="IBj-Mh-SD1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bhz-Id-mUU" secondAttribute="leading" constant="20" symbolic="YES" id="bSG-dz-Trq"/>
+                                            <constraint firstItem="5kn-7Y-Cie" firstAttribute="top" secondItem="bhz-Id-mUU" secondAttribute="top" id="vcu-WT-N9Y"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaW-YG-lkN">
+                                        <rect key="frame" x="0.0" y="231" width="414" height="587"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="yUI-hq-xdD">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="587"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="f5q-7Q-M7h">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wh-7H-fL0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="1">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ywb-6A-bXV"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPT-CA-Fzg">
+                                                                <rect key="frame" x="104" y="0.0" width="102.5" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="2">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCZ-ls-om2"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgY-Ad-Uh7">
+                                                                <rect key="frame" x="207.5" y="0.0" width="103" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="3">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EXz-YJ-GS5"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8g-pN-kHN">
+                                                                <rect key="frame" x="311.5" y="0.0" width="102.5" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="tinted">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="+">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="plus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="49P-qk-u0I"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="9pf-ro-ZM3">
+                                                        <rect key="frame" x="0.0" y="147" width="414" height="146"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcH-ux-n8c">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="4">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GAp-rm-wlR"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7S-fe-ruw">
+                                                                <rect key="frame" x="104" y="0.0" width="102.5" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="5">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="va1-eM-aVO"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdr-5P-kZ1">
+                                                                <rect key="frame" x="207.5" y="0.0" width="103" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="6">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressSix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1PU-Jp-KGz"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzk-lR-U0M">
+                                                                <rect key="frame" x="311.5" y="0.0" width="102.5" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="tinted">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="-">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5s-ku-Lgo"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="HQr-rv-eLd">
+                                                        <rect key="frame" x="0.0" y="294" width="414" height="146"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5b-Qq-Fm3">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="7">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressSeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jha-iO-gCV"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaO-5A-37w">
+                                                                <rect key="frame" x="104" y="0.0" width="102.5" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="8">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressEight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HyA-CQ-hlN"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfK-9n-FFF">
+                                                                <rect key="frame" x="207.5" y="0.0" width="103" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="9">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressNine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3t6-fK-5Po"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgB-ui-UF9">
+                                                                <rect key="frame" x="311.5" y="0.0" width="102.5" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="tinted">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="*">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFP-Yk-MRW"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-IT-DE2">
+                                                        <rect key="frame" x="0.0" y="441" width="414" height="146"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20P-h9-DKT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="0">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                        <fragment content=" ">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SPA-VO-fGD"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hm-OQ-cHm">
+                                                                <rect key="frame" x="104" y="0.0" width="102.5" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="CLEAR">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="37e-KF-Dtd"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoC-so-xnj">
+                                                                <rect key="frame" x="207.5" y="0.0" width="103" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content=".">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="pressDot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWp-rd-bus"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKe-Qc-Sq3">
+                                                                <rect key="frame" x="311.5" y="0.0" width="102.5" height="146"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="tinted">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="/">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="divide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4z-5q-HfJ"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="yUI-hq-xdD" firstAttribute="top" secondItem="eaW-YG-lkN" secondAttribute="top" id="M5U-Dd-uDT"/>
+                                            <constraint firstAttribute="bottom" secondItem="yUI-hq-xdD" secondAttribute="bottom" id="jjZ-fJ-8Bj"/>
+                                            <constraint firstItem="yUI-hq-xdD" firstAttribute="leading" secondItem="eaW-YG-lkN" secondAttribute="leading" id="lI1-68-RXY"/>
+                                            <constraint firstAttribute="trailing" secondItem="yUI-hq-xdD" secondAttribute="trailing" id="mKj-dK-ogc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eaW-YG-lkN" firstAttribute="top" secondItem="BRB-i2-fxK" secondAttribute="top" multiplier="0.66" constant="231" id="Z5F-A1-hai"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BRB-i2-fxK" secondAttribute="bottom" id="BfQ-CE-YHl"/>
+                            <constraint firstItem="eaW-YG-lkN" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.717604" id="Of7-ED-SGg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BRB-i2-fxK" secondAttribute="trailing" id="vxV-MP-tJ1"/>
+                            <constraint firstItem="BRB-i2-fxK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x1T-67-0j8"/>
+                            <constraint firstItem="BRB-i2-fxK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zcw-0h-iMN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="IBj-Mh-SD1" id="vdB-ee-orj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
