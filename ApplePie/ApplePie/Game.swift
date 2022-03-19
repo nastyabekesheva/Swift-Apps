@@ -12,16 +12,16 @@ struct Game {
     var incorrectMovesRemaining: Int
     var guessedLetters : [Character]
     var formattedWord : String{
-        var guesedWord = ""
+        var guessedWord = ""
         for letter in word {
             if guessedLetters.contains(letter){
-                guesedWord += "\(letter)"
+                guessedWord += "\(letter)"
             }
             else{
-                guesedWord += "_"
+                guessedWord += "_"
             }
         }
-        return guesedWord
+        return guessedWord
     }
     
     mutating func playerGuessed(letter : Character){

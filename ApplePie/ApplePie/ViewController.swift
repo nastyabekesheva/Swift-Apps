@@ -14,10 +14,18 @@ class ViewController: UIViewController {
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var letterButtons: [UIButton]!
     
-    var listOfWords = ["tree", "swift", "apple", "math", "physics", "book", "cosmos", "integer"]
+    var listOfWords = ["buccaneer", "swift", "glorious", "incandescent", "bug", "program"]
     var incorrectMovesAllowed = 7
-    var totalWins = 0
-    var totalLosses = 0
+    var totalWins = 0{
+        didSet{
+            newRound()
+        }
+    }
+    var totalLosses = 0{
+        didSet{
+            newRound()
+        }
+    }
     var currentGame : Game!
     
     override func viewDidLoad() {
@@ -30,14 +38,24 @@ class ViewController: UIViewController {
         let letterString = sender.configuration!.title!
         let letter = Character(letterString.lowercased())
         currentGame.playerGuessed(letter: letter)
-        updateUI()
+        updateGameState()
     }
     
     func newRound(){
-        let newWord = listOfWords.removeFirst()
-            currentGame = Game(word: newWord, incorrectMovesRemaining:
-            incorrectMovesAllowed, guessedLetters: [])
+        if !listOfWords.isEmpty {
+            let newWord = listOfWords.removeFirst()
+                currentGame = Game(word: newWord,
+                incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: [])
+            enableLetterButtons(true)
             updateUI()
+        }
+        else{
+            enableLetterButtons(false)
+            updateUI()
+            correctWordLabel.text = "Out of words!"
+            
+        }
+
     }
     
     func updateUI() {
@@ -51,7 +69,24 @@ class ViewController: UIViewController {
         correctWordLabel.text = wordWithSpaces
         
     }
-                                      
+    
+    func updateGameState(){
+        if currentGame.incorrectMovesRemaining == 0{
+            totalLosses += 1
+        }
+        else if currentGame.word == currentGame.formattedWord{
+            totalWins += 1
+        }
+        else{
+            updateUI()
+        }
+    }
+    
+    func enableLetterButtons(_ enable: Bool) {
+        for button in letterButtons {
+            button.isEnabled = enable
+        }
+    }
 
 }
 
